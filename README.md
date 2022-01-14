@@ -1,3 +1,8 @@
+Portfolio project to showcase a bit more about my profile and potential.
+
+Wireframes: https://whimsical.com/portfolio-DFMtxxgmbdKtwMw51nZ8Kk
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
