@@ -1,7 +1,13 @@
+import About from "./About";
+import Home from "./Home";
+import Works from "./Works";
+
 export default function Main() {
   return (
-    <header>
-      <p>Main</p>
-    </header>
+    <main>
+      <Home />
+      <Works />
+      <About />
+    </main>
   );
 }
