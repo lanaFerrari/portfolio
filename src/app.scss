@@ -1,3 +1,5 @@
+@import "./scss/variables.scss";
+
 /* Modern Reset */
 
 /* Box sizing rules */
@@ -26,6 +28,9 @@ li {
   margin: 0;
 }
 
+h1 {
+  line-height: 4rem;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -60,10 +65,135 @@ ul {
   padding: 0;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 header {
   max-height: 250px;
+  padding: 1rem 0 1rem 0;
+}
+
+.lateral-padding {
+  padding: 0 1.4rem 0 1.4rem;
+}
+.padding-top-bottom {
+  padding: 1rem 0 1rem 0;
+}
+
+.padding-left {
+  padding-left: 2rem;
+}
+
+//Styling
+
+.justify-center {
+  display: grid;
+  justify-items: center;
+}
+.align-center {
+  display: grid;
+  align-items: center;
+}
+.home {
+  background-color: #f3e7c9;
+  height: 95vh;
+}
+
+.icon-frame {
+  max-width: 35px;
+}
+
+.frame-works {
+  max-width: 400px;
+}
+//Colors
+
+.pink {
+  color: $pink;
+}
+
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+.green {
+  color: $green;
+}
+
+.beige {
+  color: $beige;
+}
+
+.bg-beige {
+  background-color: $beige;
+}
+// Grids Flex
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2.5rem;
+}
+
+// Animation
+
+.b-font {
+  font-size: 3em;
+}
+
+.m-font {
+  font-size: 1rem;
+}
+
+span {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//Paralax
+
+// Media queries
+
+@media screen and (max-width: 768px) {
+  .expanded-screen {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .small-screen {
+    display: none;
+  }
+
+  .b-font {
+    font-size: 5em;
+  }
+
+  .m-font {
+    font-size: 2.5rem;
+  }
+
+  .padding-left {
+    padding-left: 10rem;
+  }
+
+  h1 {
+    line-height: 6rem;
+  }
 }
