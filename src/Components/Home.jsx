@@ -51,19 +51,21 @@ export default function Home() {
   });
 
   return (
-    <div className="home container align-center">
-      <section className="padding-left padding-top-bottom">
-        <h1 className="b-font pink">Hello!</h1>
-        <h1 className="pink b-font">I'm Lana</h1>
+    <>
+      <div className="home container align-center ">
+        <section className="padding-left padding-top-bottom">
+          <h1 className="b-font pink">Hello!</h1>
+          <h1 className="pink b-font">I'm Lana</h1>
 
-        <div className="padding-top-bottom m-font black">
-          <p>Software Developer</p>
-          <p>Based in London</p>
+          <div className="padding-top-bottom m-font black">
+            <p>Software Developer</p>
+            <p>Based in London</p>
+          </div>
+        </section>
+        <div className="justify-center">
+          <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/48/000000/external-scroll-touch-gestures-those-icons-lineal-those-icons-2.png" />
         </div>
-      </section>
-      <div className="justify-center">
-        <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/48/000000/external-scroll-touch-gestures-those-icons-lineal-those-icons-2.png" />
       </div>
-    </div>
+    </>
   );
 }
