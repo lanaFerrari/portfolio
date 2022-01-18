@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  // let closeNav = 0;
+
   return (
-    <header className="lateral-padding bg-beige">
+    <header className="lateral-padding">
       <nav className="flex-container">
         <div className="expanded-screen flex-container black lateral-padding padding-top-bottom">
           <a href="#about">
@@ -17,7 +19,12 @@ export default function Header() {
         </div>
         <div className="small-screen padding-top-bottom">
           <div className="icon-frame">
-            <img src="https://img.icons8.com/material-outlined/50/000000/menu--v1.png" />
+            <img
+              src="https://img.icons8.com/material-outlined/50/000000/menu--v1.png"
+              // onClick={
+              // closeNav()
+              // }
+            />
           </div>
         </div>
       </nav>
