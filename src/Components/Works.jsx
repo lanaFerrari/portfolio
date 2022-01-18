@@ -1,6 +1,3 @@
-import react from "react";
-import { Link } from "react-router-dom";
-
 export default function Works() {
   const db = [
     {
@@ -51,40 +48,46 @@ export default function Works() {
   ];
 
   return (
-    <section className="lateral-padding">
-      <h2>Works</h2>
-      {db.map((project, index) => {
-        return (
-          <div key={index}>
-            <div className={project.classOne}>
-              <div className="frame-works">
-                <img
-                  src={require("../imgs/" + project.photo)}
-                  alt={project.title}
-                />
+    <section className="lateral-padding padding-right-left padding-top-bottom">
+      <h2 className="padding-top-bottom">Works</h2>
+      <div className="responsive-grid padding-top-bottom">
+        {db.map((project, index) => {
+          return (
+            <div key={index} className="two-c-grid padding-top-bottom ">
+              <div className={project.classOne}>
+                <div className="frame-works box-shadow">
+                  <img
+                    src={require("../imgs/" + project.photo)}
+                    alt={project.title}
+                  />
+                </div>
+              </div>
+              <div className="padding-top-bottom ${project.classTwo}">
+                <h3 className="padding-top">{project.title}</h3>
+                <p className="description">{project.description}</p>
+
+                <div className="flex">
+                  <a href={project.code} target="_blank">
+                    <img
+                      src="https://img.icons8.com/ios-filled/50/000000/source-code.png"
+                      alt="Link to Deployed Website"
+                      className="icon-frame-two"
+                    />
+                  </a>
+
+                  <a href={project.deploy} target="_blank">
+                    <img
+                      src="https://img.icons8.com/ios/50/000000/rocket--v1.png"
+                      alt="Link to source code"
+                      className="icon-frame-two"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className={project.classTwo}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-
-              <a href={project.code} target="_blank">
-                <img
-                  src="https://img.icons8.com/ios-filled/50/000000/source-code.png"
-                  alt="Link to Deployed Website"
-                />
-              </a>
-
-              <a href={project.deploy} target="_blank">
-                <img
-                  src="https://img.icons8.com/ios/50/000000/rocket--v1.png"
-                  alt="Link to source code"
-                />
-              </a>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 }
