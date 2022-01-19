@@ -48,12 +48,19 @@ export default function Works() {
   ];
 
   return (
-    <section className="lateral-padding padding-right-left padding-top-bottom">
-      <h2 className="padding-top-bottom">Works</h2>
-      <div className="responsive-grid padding-top-bottom ">
+    <section
+      id="works"
+      className="lateral-padding padding-right-left padding-top-bottom panel"
+      data-color="white"
+    >
+      <h2 className="padding-top-bottom">Projects</h2>
+      <div className="">
         {db.map((project, index) => {
           return (
-            <div key={index} className="two-c-grid padding-top line-bottom">
+            <div
+              key={index}
+              className="two-c-grid padding-top-bottom line-bottom"
+            >
               <div className={project.classOne}>
                 <div className="frame-works box-shadow">
                   <img
@@ -66,7 +73,7 @@ export default function Works() {
                 <h3 className="m-font align-center">{project.title}</h3>
                 <p className="description">{project.description}</p>
 
-                <div className="flex align-center">
+                <div className="flex align">
                   <div>
                     <a href={project.code} target="_blank">
                       <img
