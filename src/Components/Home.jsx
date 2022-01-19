@@ -52,8 +52,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="home container align-center ">
-        <section className="padding-left padding-top-bottom">
+      <div className="home  align-center ">
+        <section className="padding-left padding-top-bottom height">
           <h1 className="b-font pink">Hello!</h1>
           <h1 className="pink b-font">I'm Lana</h1>
 
