@@ -31,6 +31,10 @@ li {
 h1 {
   line-height: 4rem;
 }
+
+// h3 {
+//   line-height: 1rem;
+// }
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -73,11 +77,81 @@ a:active {
   color: inherit;
 }
 
+.height {
+  height: 65vh;
+}
+
+.home {
+  height: 95vh;
+}
+
 header {
   max-height: 250px;
   padding: 1rem 0 1rem 0;
 }
 
+//Fonts and sizes
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.b-font {
+  font-size: 3em;
+}
+
+.m-font {
+  font-size: 1rem;
+}
+
+//Styling
+.justify-center {
+  display: grid;
+  justify-items: center;
+}
+.align-center {
+  display: grid;
+  align-items: center;
+}
+
+.justify-content {
+  display: grid;
+  justify-content: center;
+}
+
+.box-shadow {
+  border: solid #bdbdbd 1px;
+  box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+  -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+  -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+}
+
+//Frames
+.icon-frame {
+  max-width: 35px;
+}
+
+.icon-frame-two {
+  max-width: 28px;
+  padding-top: 0.4rem;
+}
+
+.frame-works {
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.frame-gif {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.frame-profile {
+  max-width: 200px;
+}
+
+//Padding
 .lateral-padding {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
@@ -96,33 +170,10 @@ header {
   padding-right: 2rem;
 }
 
-//Styling
-
-.justify-center {
-  display: grid;
-  justify-items: center;
-}
-.align-center {
-  display: grid;
-  align-items: center;
-}
-.home {
-  height: 95vh;
+.padding-top {
+  padding-top: 1rem;
 }
 
-.icon-frame {
-  max-width: 35px;
-}
-
-.icon-frame-two {
-  max-width: 30px;
-}
-
-.frame-works {
-  max-width: 400px;
-  overflow: hidden;
-  border-radius: 10px;
-}
 //Colors
 
 .pink {
@@ -160,7 +211,6 @@ header {
 }
 
 // Grids Flex
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -170,8 +220,8 @@ header {
 
 .flex {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
+  justify-content: center;
 }
 
 .left {
@@ -182,15 +232,6 @@ header {
 }
 
 // Animation
-
-.b-font {
-  font-size: 3em;
-}
-
-.m-font {
-  font-size: 1rem;
-}
-
 span {
   border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
@@ -205,7 +246,6 @@ span {
 //Paralax
 
 // Media queries
-
 @media screen and (max-width: 768px) {
   .expanded-screen,
   .description {
@@ -267,11 +307,16 @@ span {
   .icon-frame-two {
     max-width: 45px;
   }
+
+  .line-bottom {
+    padding: 5rem 1rem 4rem 1rem;
+    border-bottom: 3px double $green;
+  }
 }
 
 //Trying stuff
 /* Setting fade transition and default settings */
-footer {
+article {
   color: #000;
   background-color: #f4f4f4;
   transition: background-color 2s ease;
@@ -280,21 +325,21 @@ footer {
 /* panel styles */
 .panel {
   /* min height incase content is higher than window height */
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: sans-serif;
+  min-height: 50vh;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  // font-family: sans-serif;
   /* outline: 10px solid hotpink; */
   /* turn above on to see the edge of panels */
 }
 
 /* colours */
 .color-violet {
-  background-color: $white;
+  background-color: white;
 }
 .color-indigo {
-  background-color: $pink;
+  background-color: orange;
 }
 .color-blue {
   background-color: #2f8fed;
@@ -310,13 +355,4 @@ footer {
 }
 .color-red {
   background-color: #f2293a;
-}
-
-/// trying box
-
-.box-shadow {
-  border: solid #bdbdbd 1px;
-  box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-  -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-  -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
 }
