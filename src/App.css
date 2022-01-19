@@ -26,7 +26,11 @@ li {
 }
 
 h1 {
-  line-height: 4rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 /* Set core body defaults */
@@ -85,16 +89,16 @@ header {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: normal;
 }
 
 .b-font {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .m-font {
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
 .justify-center {
@@ -117,6 +121,11 @@ h2 {
   box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+}
+
+.border {
+  border: 2px solid #315442;
+  border-radius: 10px;
 }
 
 .icon-frame {
@@ -143,14 +152,18 @@ h2 {
   max-width: 200px;
 }
 
+.tech-frame {
+  max-width: 200px;
+}
+
 .lateral-padding {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
 
 .padding-top-bottom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .padding-left {
@@ -166,33 +179,8 @@ h2 {
   padding-top: 1rem;
 }
 
-.pink {
-  color: #ee91af;
-}
-
-.black {
-  color: #10161f;
-}
-
-.white {
-  color: #ffffff;
-}
-
-.green {
-  color: #315442;
-}
-
-.beige {
-  color: #f3e7c9;
-}
-
-.bg-beige {
-  background-color: #315442;
-}
-
 .home,
 header {
-  background: #f3e7c9;
   background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
 }
 
@@ -206,7 +194,6 @@ header {
 .flex {
   display: flex;
   gap: 1rem;
-  justify-content: center;
 }
 
 .left {
@@ -234,7 +221,7 @@ span {
   }
 
   .frame-works {
-    max-width: 200px;
+    max-width: 350px;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -246,10 +233,28 @@ span {
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
 
-  .responsive-grid {
+  .left,
+.right {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    justify-content: center;
+  }
+
+  .responsive-grid-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .box-size {
+    max-width: 400px;
+    border-left: #ee91af 3px solid;
+    border-right: #ee91af 3px solid;
+    border-radius: 10px;
+  }
+
+  .align {
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -259,10 +264,6 @@ span {
 
   .b-font {
     font-size: 5em;
-  }
-
-  .m-font {
-    font-size: 2.5rem;
   }
 
   .padding-left {
@@ -295,45 +296,58 @@ span {
   }
 }
 /* Setting fade transition and default settings */
-article {
+main {
   color: #000;
-  background-color: #f4f4f4;
-  transition: background-color 2s ease;
+  background-color: white;
+  transition: background-color 3s ease;
 }
 
 /* panel styles */
 .panel {
-  /* min height incase content is higher than window height */
-  min-height: 50vh;
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of panels */
+  min-height: 70vh;
 }
 
-/* colours */
-.color-violet {
-  background-color: white;
+/* Colours */
+.color-white {
+  background-color: whitesmoke;
 }
 
-.color-indigo {
-  background-color: orange;
+.color-baby-blue {
+  background-color: #c1e7f8;
 }
 
 .color-blue {
-  background-color: #2f8fed;
+  background-color: #a7def8;
 }
 
-.color-green {
-  background-color: #4dcf42;
+.color-black {
+  background-color: #8ad8fc;
 }
 
-.color-yellow {
-  background-color: #faeb33;
+.pink-bg {
+  background-color: #ffc3d4;
 }
 
-.color-orange {
-  background-color: #f19031;
+.pink {
+  color: #ee91af;
 }
 
-.color-red {
-  background-color: #f2293a;
+.black {
+  color: #10161f;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.green {
+  color: #315442;
+}
+
+.beige {
+  color: #f3e7c9;
+}
+
+.bg-clouds {
+  background: url(https://i.pinimg.com/564x/0d/ca/5f/0dca5f0d84bf718864d4a09a6fbb83eb.jpg);
 }

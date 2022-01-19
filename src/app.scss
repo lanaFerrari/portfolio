@@ -1,5 +1,7 @@
 @import "./scss/variables.scss";
 
+$blue: #8fc5f8;
+
 /* Modern Reset */
 
 /* Box sizing rules */
@@ -29,12 +31,15 @@ li {
 }
 
 h1 {
-  line-height: 4rem;
+  line-height: 3.5rem;
+  // text-shadow: 5px 2px $blue;
 }
 
-// h3 {
-//   line-height: 1rem;
-// }
+h3 {
+  // color: $blue;
+  // text-shadow: 1px 1px black;
+  font-weight: normal;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -92,16 +97,18 @@ header {
 
 //Fonts and sizes
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: normal;
+  // color: #70d1fe;
+  // text-shadow: 1px 1px $pink;
 }
 
 .b-font {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .m-font {
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
 //Styling
@@ -126,6 +133,10 @@ h2 {
   -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
 }
 
+.border {
+  border: 2px solid $green;
+  border-radius: 10px;
+}
 //Frames
 .icon-frame {
   max-width: 35px;
@@ -151,14 +162,17 @@ h2 {
   max-width: 200px;
 }
 
+.tech-frame {
+  max-width: 200px;
+}
 //Padding
 .lateral-padding {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
 .padding-top-bottom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .padding-left {
@@ -174,38 +188,11 @@ h2 {
   padding-top: 1rem;
 }
 
-//Colors
-
-.pink {
-  color: $pink;
-}
-
-.black {
-  color: $black;
-}
-
-.white {
-  color: $white;
-}
-
-.green {
-  color: $green;
-}
-
-.beige {
-  color: $beige;
-}
-
-.bg-beige {
-  background-color: $green;
-}
-
 .home,
 header {
-  background: rgb(243, 231, 201);
   background: linear-gradient(
     90deg,
-    rgba(243, 231, 201, 1) 0%,
+    rgba(243, 231, 201) 0%,
     rgba(16, 31, 31, 1) 700%
   );
 }
@@ -221,7 +208,6 @@ header {
 .flex {
   display: flex;
   gap: 1rem;
-  justify-content: center;
 }
 
 .left {
@@ -243,16 +229,15 @@ span {
   }
 }
 
-//Paralax
-
 // Media queries
+//For small screens
 @media screen and (max-width: 768px) {
   .expanded-screen,
   .description {
     display: none;
   }
   .frame-works {
-    max-width: 200px;
+    max-width: 350px;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -264,13 +249,31 @@ span {
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
 
-  .responsive-grid {
+  .left,
+  .right {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    justify-content: center;
+  }
+  .responsive-grid-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .box-size {
+    max-width: 400px;
+    border-left: $pink 3px solid;
+    border-right: $pink 3px solid;
+    border-radius: 10px;
+  }
+
+  .align {
+    display: flex;
+    justify-content: center;
   }
 }
 
+//For big screens
 @media screen and (min-width: 768px) {
   .small-screen {
     display: none;
@@ -278,10 +281,6 @@ span {
 
   .b-font {
     font-size: 5em;
-  }
-
-  .m-font {
-    font-size: 2.5rem;
   }
 
   .padding-left {
@@ -314,45 +313,54 @@ span {
   }
 }
 
-//Trying stuff
+//Gradient effect
 /* Setting fade transition and default settings */
-article {
+main {
   color: #000;
-  background-color: #f4f4f4;
-  transition: background-color 2s ease;
+  background-color: white;
+  transition: background-color 3s ease;
 }
 
 /* panel styles */
 .panel {
-  /* min height incase content is higher than window height */
-  min-height: 50vh;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
-  // font-family: sans-serif;
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of panels */
+  min-height: 70vh;
 }
 
-/* colours */
-.color-violet {
-  background-color: white;
+/* Colours */
+.color-white {
+  background-color: whitesmoke;
 }
-.color-indigo {
-  background-color: orange;
+
+.color-baby-blue {
+  background-color: #c1e7f8;
 }
 .color-blue {
-  background-color: #2f8fed;
+  background-color: #a7def8;
 }
-.color-green {
-  background-color: #4dcf42;
+.color-black {
+  background-color: #8ad8fc;
 }
-.color-yellow {
-  background-color: #faeb33;
+
+.pink-bg {
+  background-color: #ffc3d4;
 }
-.color-orange {
-  background-color: #f19031;
+
+.pink {
+  color: $pink;
 }
-.color-red {
-  background-color: #f2293a;
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+}
+.green {
+  color: $green;
+}
+.beige {
+  color: $beige;
+}
+
+.bg-clouds {
+  background: url(https://i.pinimg.com/564x/0d/ca/5f/0dca5f0d84bf718864d4a09a6fbb83eb.jpg);
 }
