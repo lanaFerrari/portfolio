@@ -52,11 +52,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="home  align-center ">
-        <section className="padding-left padding-top-bottom height">
+      <div className="home align-center">
+        <section className="padding-left padding-top-bottom align-center">
           <h1 className="b-font pink">Hello!</h1>
           <h1 className="pink b-font">I'm Lana</h1>
-
           <div className="padding-top-bottom m-font black">
             <p>Software Developer</p>
             <p>Based in London</p>
