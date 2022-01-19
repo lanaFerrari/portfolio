@@ -50,10 +50,10 @@ export default function Works() {
   return (
     <section className="lateral-padding padding-right-left padding-top-bottom">
       <h2 className="padding-top-bottom">Works</h2>
-      <div className="responsive-grid padding-top-bottom">
+      <div className="responsive-grid padding-top-bottom ">
         {db.map((project, index) => {
           return (
-            <div key={index} className="two-c-grid padding-top-bottom ">
+            <div key={index} className="two-c-grid padding-top line-bottom">
               <div className={project.classOne}>
                 <div className="frame-works box-shadow">
                   <img
@@ -62,26 +62,29 @@ export default function Works() {
                   />
                 </div>
               </div>
-              <div className="padding-top-bottom ${project.classTwo}">
-                <h3 className="padding-top">{project.title}</h3>
+              <div className="padding-top-bottom justify-content">
+                <h3 className="m-font align-center">{project.title}</h3>
                 <p className="description">{project.description}</p>
 
-                <div className="flex">
-                  <a href={project.code} target="_blank">
-                    <img
-                      src="https://img.icons8.com/ios-filled/50/000000/source-code.png"
-                      alt="Link to Deployed Website"
-                      className="icon-frame-two"
-                    />
-                  </a>
-
-                  <a href={project.deploy} target="_blank">
-                    <img
-                      src="https://img.icons8.com/ios/50/000000/rocket--v1.png"
-                      alt="Link to source code"
-                      className="icon-frame-two"
-                    />
-                  </a>
+                <div className="flex align-center">
+                  <div>
+                    <a href={project.code} target="_blank">
+                      <img
+                        src="https://img.icons8.com/ios-filled/50/000000/source-code.png"
+                        alt="Link to Deployed Website"
+                        className="icon-frame-two "
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a href={project.deploy} target="_blank">
+                      <img
+                        src="https://img.icons8.com/ios/50/000000/rocket--v1.png"
+                        alt="Link to source code"
+                        className="icon-frame-two"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
