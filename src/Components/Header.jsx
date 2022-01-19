@@ -4,7 +4,7 @@ export default function Header() {
   // let closeNav = 0;
 
   return (
-    <header className="lateral-padding">
+    <header className="lateral-padding bg-beige">
       <nav className="flex-container">
         <div className="expanded-screen flex-container black lateral-padding padding-top-bottom">
           <a href="#about">
