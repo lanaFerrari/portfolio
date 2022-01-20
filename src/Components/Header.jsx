@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="lateral-padding bg-beige">
       <nav className="flex-container">
-        <div className="expanded-screen flex-container black lateral-padding padding-top-bottom">
+        <div className="expanded-screen flex-container s-font lateral-padding padding-top-bottom">
           <a href="#about">
             <div>About()</div>
           </a>
@@ -17,10 +17,10 @@ export default function Header() {
             <div>Contact()</div>
           </a>
         </div>
-        <div className="small-screen padding-top-bottom">
+        <div className="small-screen">
           <div className="icon-frame">
             <img
-              src="https://img.icons8.com/material-outlined/50/000000/menu--v1.png"
+              src={require("../imgs/icons/menu.png")}
               // onClick={
               // closeNav()
               // }

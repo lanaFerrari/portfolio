@@ -6,7 +6,7 @@ export default function Works() {
       photo: "checkers.jpg",
       title: "Checkers Game",
       description:
-        "Website to practice authentication using Bcrypt and Token where the user can also play checkers",
+        "Website to practice authentication using Bcrypt and Token where the user can also play checkers.",
       tech: {
         react: "react",
         node: "node",
@@ -22,7 +22,7 @@ export default function Works() {
       photo: "donation.jpg",
       title: "Donation Website",
       description:
-        "Website where the user can perfom full CRUD and navigate through the pages",
+        "Website where the user can perfom full CRUD and navigate through the pages.",
       tech: {
         react: "react",
         node: "node",
@@ -37,12 +37,26 @@ export default function Works() {
       classTwo: "right",
       photo: "spotify.png",
       title: "Spotify HomePage",
-      description: "Website to practice accessibility and responsiveness",
+      description: "Website to practice accessibility and responsiveness.",
       tech: {
         html: "html",
         css: "css",
       },
       code: "https://github.com/lanaFerrari/boolean-uk-html-spotify",
+      deploy: "https://google.com",
+    },
+    {
+      classOne: "right",
+      classTwo: "left",
+      photo: "artexibit.png",
+      title: "Artist Exhibition",
+      description:
+        "Practice writing models with relationships for an API of an artist exhibition management service.",
+      tech: {
+        html: "html",
+        css: "css",
+      },
+      code: "https://github.com/lanaFerrari/boolean-uk-api-artist-exhibition",
       deploy: "https://google.com",
     },
   ];
@@ -59,7 +73,7 @@ export default function Works() {
           return (
             <div
               key={index}
-              className="two-c-grid padding-top-bottom line-bottom"
+              className="two-c-grid padding-top-bottom line-bottom animation"
             >
               <div className={project.classOne}>
                 <div className="frame-works box-shadow">
@@ -70,14 +84,14 @@ export default function Works() {
                 </div>
               </div>
               <div className="padding-top-bottom justify-content">
-                <h3 className="m-font align-center">{project.title}</h3>
-                <p className="description">{project.description}</p>
+                <h3 className="align-center">{project.title}</h3>
+                <p className="description s-font">{project.description}</p>
 
                 <div className="flex align">
                   <div>
                     <a href={project.code} target="_blank">
                       <img
-                        src="https://img.icons8.com/ios-filled/50/000000/source-code.png"
+                        src={require("../imgs/icons/deploy.png")}
                         alt="Link to Deployed Website"
                         className="icon-frame-two "
                       />
@@ -86,7 +100,7 @@ export default function Works() {
                   <div>
                     <a href={project.deploy} target="_blank">
                       <img
-                        src="https://img.icons8.com/ios/50/000000/rocket--v1.png"
+                        src={require("../imgs/icons/code.png")}
                         alt="Link to source code"
                         className="icon-frame-two"
                       />
