@@ -9,6 +9,7 @@ $blue: #8fc5f8;
   box-sizing: border-box;
   margin: 0;
   font-family: helvetica;
+  color: $green;
 }
 
 /* Remove default padding */
@@ -30,16 +31,6 @@ li {
   margin: 0;
 }
 
-h1 {
-  line-height: 3.5rem;
-  // text-shadow: 5px 2px $blue;
-}
-
-h3 {
-  // color: $blue;
-  // text-shadow: 1px 1px black;
-  font-weight: normal;
-}
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -96,19 +87,37 @@ header {
 }
 
 //Fonts and sizes
+
+h1 {
+  line-height: 3.5rem;
+  font-size: 3.5rem;
+  text-shadow: 2px 1.5px $green;
+}
+
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
   font-weight: normal;
-  // color: #70d1fe;
-  // text-shadow: 1px 1px $pink;
 }
 
 .b-font {
-  font-size: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-shadow: 0.4px 0.4px $pink;
 }
 
 .m-font {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 2px 2px $green;
+}
+
+.s-font {
+  font-size: 1.2rem;
 }
 
 //Styling
@@ -133,10 +142,11 @@ h2 {
   -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
 }
 
-.border {
-  border: 2px solid $green;
-  border-radius: 10px;
-}
+// .border {
+//   border-right: 3px double $green;
+//   border-left: 3px double $green;
+// }
+
 //Frames
 .icon-frame {
   max-width: 35px;
@@ -158,13 +168,18 @@ h2 {
   border-radius: 10px;
 }
 
-.frame-profile {
-  max-width: 200px;
-}
-
 .tech-frame {
   max-width: 200px;
 }
+
+.profile-frame {
+  width: 250px;
+}
+
+.frame-video {
+  width: 480px;
+}
+
 //Padding
 .lateral-padding {
   padding-left: 1.4rem;
@@ -179,13 +194,18 @@ h2 {
   padding-left: 2rem;
 }
 
-.padding-right-left {
+.padding-right-left,
+.padding-right-left-two {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .padding-top {
   padding-top: 1rem;
+}
+
+.padding-top-m {
+  padding-top: 3.5rem;
 }
 
 .home,
@@ -217,6 +237,43 @@ header {
   grid-area: b;
 }
 
+.profile-frame {
+  grid-area: pr;
+  background-color: $green;
+  padding-top: 1.8rem;
+  width: 280px;
+}
+.about-frame {
+  grid-area: ab;
+  background-color: #96c5f7;
+  height: 180px;
+  width: 250px;
+}
+
+.second-frame {
+  background-color: rgb(80, 15, 80);
+  height: 280px;
+  width: 280px;
+}
+
+.invite-frame {
+  grid-area: in;
+  background-color: #96c5f7;
+  height: 280px;
+  width: 510px;
+}
+
+.grid-template {
+  display: grid;
+  grid-template:
+    ". .   pr pr"
+    "ab ab pr pr"
+    "ab ab pr pr"
+    ". in  in in"
+    ". in  in in";
+  gap: 0.5rem;
+}
+
 // Animation
 span {
   border-right: 0.05em solid;
@@ -235,6 +292,9 @@ span {
   .expanded-screen,
   .description {
     display: none;
+  }
+  .frame-video {
+    width: 330px;
   }
   .frame-works {
     max-width: 350px;
@@ -262,14 +322,39 @@ span {
 
   .box-size {
     max-width: 400px;
-    border-left: $pink 3px solid;
-    border-right: $pink 3px solid;
-    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 50%;
   }
 
   .align {
     display: flex;
     justify-content: center;
+  }
+
+  .profile-frame {
+    grid-area: pr;
+    background-color: $green;
+    padding-top: 1.8rem;
+  }
+  .about-frame {
+    grid-area: ab;
+    background-color: #96c5f7;
+    height: 200px;
+    width: 170px;
+  }
+
+  .second-frame {
+    background-color: rgb(80, 15, 80);
+    height: 300px;
+    width: 190px;
+  }
+
+  .invite-frame {
+    grid-area: in;
+    background-color: #96c5f7;
+    height: 160px;
+    width: 350px;
   }
 }
 
@@ -279,8 +364,22 @@ span {
     display: none;
   }
 
+  h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
   .b-font {
-    font-size: 5em;
+    font-size: 2.3em;
+    line-height: 2.5rem;
   }
 
   .padding-left {
@@ -292,10 +391,10 @@ span {
     padding-right: 10rem;
   }
 
-  h1 {
-    line-height: 6rem;
+  .padding-right-left-two {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
   }
-
   .two-c-grid {
     display: grid;
     grid-template: "a b";
@@ -311,6 +410,20 @@ span {
     padding: 5rem 1rem 4rem 1rem;
     border-bottom: 3px double $green;
   }
+
+  .responsive-grid-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .box-size {
+    max-width: 900px;
+    max-height: 900px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 50%;
+  }
 }
 
 //Gradient effect
@@ -323,26 +436,45 @@ main {
 
 /* panel styles */
 .panel {
-  min-height: 70vh;
+  min-height: 100vh;
+}
+
+//Animations
+
+h2 {
+  color: rgba(255, 255, 255, 0.2);
+  background-image: url("https://images.unsplash.com/photo-1529641484336-ef35148bab06?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55a1e60cd6799d5761c7ec40c4954569&auto=format&fit=crop&w=500&q=60");
+  /*   background-position: center; */
+  background-size: 270px;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 0px;
+  }
+  40% {
+    background-position: left 800px top 0px;
+  }
 }
 
 /* Colours */
+
+p {
+  color: $green;
+}
+
 .color-white {
-  background-color: whitesmoke;
+  background-color: #fafafa;
+}
+.color-baby-green {
+  background-color: rgb(250, 242, 243);
 }
 
-.color-baby-blue {
-  background-color: #c1e7f8;
-}
-.color-blue {
-  background-color: #a7def8;
-}
-.color-black {
-  background-color: #8ad8fc;
-}
-
-.pink-bg {
-  background-color: #ffc3d4;
+.color-green {
+  background-color: rgb(252, 238, 240);
 }
 
 .pink {
@@ -351,16 +483,33 @@ main {
 .black {
   color: $black;
 }
-.white {
+.white-c {
   color: $white;
 }
-.green {
+.green-c {
   color: $green;
+  text-shadow: 0.1px 0.1px $pink;
 }
 .beige {
   color: $beige;
 }
 
-.bg-clouds {
-  background: url(https://i.pinimg.com/564x/0d/ca/5f/0dca5f0d84bf718864d4a09a6fbb83eb.jpg);
+/// animation to try later
+.eff-muv {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+//Trying
