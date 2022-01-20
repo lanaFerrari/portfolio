@@ -54,9 +54,9 @@ export default function Home() {
     <>
       <div className="home align-center">
         <section className="padding-left padding-top-bottom align-center">
-          <h1 className="b-font pink">Hello!</h1>
-          <h1 className="pink b-font">I'm Lana</h1>
-          <div className="padding-top-bottom m-font black">
+          <h1 className="pink">Hello!</h1>
+          <h1 className="pink">I'm Lana</h1>
+          <div className="b-font padding-top">
             <p>Software Developer</p>
             <p>Based in London</p>
           </div>
