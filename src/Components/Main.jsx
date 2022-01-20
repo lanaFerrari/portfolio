@@ -29,8 +29,14 @@ export default function Main() {
             return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
           });
 
+          $body.removeClass(function (index, css) {
+            return (css.match(/(^|\s)eff-\S+/g) || []).join(" ");
+          });
+
           // Add class of currently active div
           $body.addClass("color-" + $(this).data("color"));
+
+          $body.addClass("eff-" + $(this).data("eff"));
         }
       });
     })
