@@ -1,7 +1,7 @@
 ### Portfolio Website
-
+---
 Portfolio project to showcase a bit more about my professional profile and skills.
-
+---
 ###Wireframes
 https://whimsical.com/portfolio-DFMtxxgmbdKtwMw51nZ8Kk
 
