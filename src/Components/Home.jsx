@@ -57,7 +57,7 @@ export default function Home() {
           <h1 className="pink">Hello!</h1>
           <h1 className="pink">I'm Lana</h1>
           <div className="b-font padding-top">
-            <p>Software Developer</p>
+            <p>Jr. Software Developer</p>
             <p>Based in London</p>
           </div>
         </section>

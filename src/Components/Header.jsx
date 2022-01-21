@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { useState } from "react";
 
-export default function Header() {
-  // let closeNav = 0;
+export default function Header(props) {
+  const { isCollapsed, setIsCollapsed } = props;
 
   return (
     <header className="lateral-padding bg-beige">
@@ -21,9 +22,7 @@ export default function Header() {
           <div className="icon-frame">
             <img
               src={require("../imgs/icons/menu.png")}
-              // onClick={
-              // closeNav()
-              // }
+              onClick={() => setIsCollapsed(!isCollapsed)}
             />
           </div>
         </div>
