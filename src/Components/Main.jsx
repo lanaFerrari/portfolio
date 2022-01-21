@@ -2,8 +2,10 @@ import About from "./About";
 import Home from "./Home";
 import Works from "./Works";
 import $ from "jquery";
+import Expand from "./Expand";
 
-export default function Main() {
+export default function Main(props) {
+  const { isCollapsed } = props;
   $(window)
     .scroll(function () {
       // selectors
@@ -29,20 +31,21 @@ export default function Main() {
             return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
           });
 
-          $body.removeClass(function (index, css) {
-            return (css.match(/(^|\s)eff-\S+/g) || []).join(" ");
-          });
+          // $body.removeClass(function (index, css) {
+          //   return (css.match(/(^|\s)eff-\S+/g) || []).join(" ");
+          // });
 
           // Add class of currently active div
           $body.addClass("color-" + $(this).data("color"));
 
-          $body.addClass("eff-" + $(this).data("eff"));
+          // $body.addClass("eff-" + $(this).data("eff"));
         }
       });
     })
     .scroll();
   return (
     <main>
+      {!isCollapsed && <Expand />}
       <Home />
       <Works />
       <About />
