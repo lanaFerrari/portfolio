@@ -35,12 +35,12 @@ export default function Profile() {
   return (
     <section
       id="about"
-      className="lateral-padding padding-right-left padding-top-bottom panel"
+      className="lateral-padding padding-right-left  panel"
       data-color="green"
     >
       <h2 className="padding-top-bottom">About ------- ⫸</h2>
 
-      <div className="justify-center padding-top-m">
+      <div className="justify-center ">
         <div className="border grid-template padding-top-bottom padding-right-left">
           <div className="invite-frame box-shadow">
             <div className="frame-video">
@@ -63,9 +63,18 @@ export default function Profile() {
       </div>
       <div className="justify-content">
         <div className="flex padding-top-bottom">
-          <img src="https://img.icons8.com/nolan/50/github.png" />
-          <img src="https://img.icons8.com/nolan/50/linkedin-circled.png" />
-          <img src="https://img.icons8.com/nolan/50/email-sign.png" />
+          <img
+            src="https://img.icons8.com/nolan/50/github.png"
+            className="icon-frame-three"
+          />
+          <img
+            src="https://img.icons8.com/nolan/50/linkedin-circled.png"
+            className="icon-frame-three"
+          />
+          <img
+            src="https://img.icons8.com/nolan/50/email-sign.png"
+            className="icon-frame-three"
+          />
         </div>
       </div>
     </section>
