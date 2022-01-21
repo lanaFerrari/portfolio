@@ -105,7 +105,7 @@ h3 {
 
 .m-font {
   font-size: 2rem;
-  font-family: sans-serif;
+  font-weight: lighter;
   text-shadow: 2px 2px #2c646b;
 }
 
@@ -140,8 +140,21 @@ h3 {
 }
 
 .icon-frame-two {
-  max-width: 28px;
-  padding-top: 0.4rem;
+  width: 35px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.icon-frame-two:hover {
+  width: 43px;
+  padding-bottom: 0;
+}
+
+.icon-frame-three:hover {
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+  padding-bottom: 0;
 }
 
 .frame-works {
@@ -164,7 +177,7 @@ h3 {
 }
 
 .frame-video {
-  width: 480px;
+  width: 460px;
 }
 
 .lateral-padding {
@@ -188,7 +201,7 @@ h3 {
 }
 
 .padding-top {
-  padding-top: 1rem;
+  padding-top: 0.4rem;
 }
 
 .padding-top-m {
@@ -196,7 +209,8 @@ h3 {
 }
 
 .home,
-header {
+header,
+.flex-end {
   background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
 }
 
@@ -205,6 +219,14 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   gap: 2.5rem;
+  padding-right: 1rem;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .flex {
@@ -223,20 +245,20 @@ header {
 .profile-frame {
   grid-area: pr;
   background-color: #2c646b;
-  padding-top: 1.8rem;
+  padding-top: 1rem;
   width: 280px;
 }
 
 .about-frame {
   grid-area: ab;
-  background-color: #96c5f7;
-  height: 180px;
-  width: 250px;
+  background-color: #f3e7c9;
+  height: 170px;
+  width: 220px;
 }
 
 .second-frame {
   background-color: #500f50;
-  height: 280px;
+  height: 260px;
   width: 280px;
 }
 
@@ -244,7 +266,7 @@ header {
   grid-area: in;
   background-color: #96c5f7;
   height: 280px;
-  width: 510px;
+  width: 480px;
 }
 
 .grid-template {
@@ -269,6 +291,10 @@ span {
     display: none;
   }
 
+  .padding-menu {
+    padding-left: 1.5rem;
+  }
+
   .frame-video {
     width: 330px;
   }
@@ -284,6 +310,11 @@ span {
     box-shadow: 1px -17px 1px rgba(239, 145, 175, 0.5);
     -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+  }
+
+  .flex-end {
+    display: grid;
+    justify-content: flex-end;
   }
 
   .left,
@@ -310,27 +341,21 @@ span {
   }
 
   .profile-frame {
-    grid-area: pr;
     background-color: #2c646b;
-    padding-top: 1.8rem;
+    padding-top: 0.2rem;
   }
 
   .about-frame {
-    grid-area: ab;
-    background-color: #96c5f7;
     height: 200px;
-    width: 170px;
+    width: 145px;
   }
 
   .second-frame {
-    background-color: #500f50;
     height: 300px;
     width: 190px;
   }
 
   .invite-frame {
-    grid-area: in;
-    background-color: #96c5f7;
     height: 160px;
     width: 350px;
   }
@@ -381,6 +406,11 @@ span {
   .icon-frame,
 .icon-frame-two {
     max-width: 45px;
+  }
+
+  .flex-end {
+    display: grid;
+    justify-content: flex-end;
   }
 
   .line-bottom {
@@ -441,11 +471,11 @@ p {
 }
 
 .color-baby-green {
-  background-color: #faf2f3;
+  background-color: #f5dfe1;
 }
 
 .color-green {
-  background-color: #fceef0;
+  background-color: #fdd8e4;
 }
 
 .pink {

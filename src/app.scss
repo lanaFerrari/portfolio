@@ -112,7 +112,7 @@ h3 {
 
 .m-font {
   font-size: 2rem;
-  font-family: sans-serif;
+  font-weight: lighter;
   text-shadow: 2px 2px $green;
 }
 
@@ -153,10 +153,22 @@ h3 {
 }
 
 .icon-frame-two {
-  max-width: 28px;
-  padding-top: 0.4rem;
+  width: 35px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
 }
 
+.icon-frame-two:hover {
+  width: 43px;
+  padding-bottom: 0;
+}
+
+.icon-frame-three:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  border-radius: 50%;
+  padding-bottom: 0;
+}
 .frame-works {
   max-width: 400px;
   overflow: hidden;
@@ -177,7 +189,7 @@ h3 {
 }
 
 .frame-video {
-  width: 480px;
+  width: 460px;
 }
 
 //Padding
@@ -201,7 +213,7 @@ h3 {
 }
 
 .padding-top {
-  padding-top: 1rem;
+  padding-top: 0.4rem;
 }
 
 .padding-top-m {
@@ -209,7 +221,8 @@ h3 {
 }
 
 .home,
-header {
+header,
+.flex-end {
   background: linear-gradient(
     90deg,
     rgba(243, 231, 201) 0%,
@@ -218,11 +231,20 @@ header {
 }
 
 // Grids Flex
+
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 2.5rem;
+  padding-right: 1rem;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .flex {
@@ -240,19 +262,19 @@ header {
 .profile-frame {
   grid-area: pr;
   background-color: $green;
-  padding-top: 1.8rem;
+  padding-top: 1rem;
   width: 280px;
 }
 .about-frame {
   grid-area: ab;
-  background-color: #96c5f7;
-  height: 180px;
-  width: 250px;
+  background-color: $beige;
+  height: 170px;
+  width: 220px;
 }
 
 .second-frame {
   background-color: rgb(80, 15, 80);
-  height: 280px;
+  height: 260px;
   width: 280px;
 }
 
@@ -260,7 +282,7 @@ header {
   grid-area: in;
   background-color: #96c5f7;
   height: 280px;
-  width: 510px;
+  width: 480px;
 }
 
 .grid-template {
@@ -293,6 +315,11 @@ span {
   .description {
     display: none;
   }
+
+  .padding-menu {
+    padding-left: 1.5rem;
+  }
+
   .frame-video {
     width: 330px;
   }
@@ -307,6 +334,11 @@ span {
     box-shadow: 1px -17px 1px rgba(239, 145, 175, 0.5);
     -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+  }
+
+  .flex-end {
+    display: grid;
+    justify-content: flex-end;
   }
 
   .left,
@@ -333,26 +365,20 @@ span {
   }
 
   .profile-frame {
-    grid-area: pr;
     background-color: $green;
-    padding-top: 1.8rem;
+    padding-top: 0.2rem;
   }
   .about-frame {
-    grid-area: ab;
-    background-color: #96c5f7;
     height: 200px;
-    width: 170px;
+    width: 145px;
   }
 
   .second-frame {
-    background-color: rgb(80, 15, 80);
     height: 300px;
     width: 190px;
   }
 
   .invite-frame {
-    grid-area: in;
-    background-color: #96c5f7;
     height: 160px;
     width: 350px;
   }
@@ -404,6 +430,11 @@ span {
   .icon-frame,
   .icon-frame-two {
     max-width: 45px;
+  }
+
+  .flex-end {
+    display: grid;
+    justify-content: flex-end;
   }
 
   .line-bottom {
@@ -470,11 +501,10 @@ p {
   background-color: #fafafa;
 }
 .color-baby-green {
-  background-color: rgb(250, 242, 243);
+  background-color: rgb(245, 223, 225);
 }
-
 .color-green {
-  background-color: rgb(252, 238, 240);
+  background-color: rgb(253, 216, 228);
 }
 
 .pink {
@@ -511,5 +541,3 @@ p {
     width: 90%;
   }
 }
-
-//Trying
