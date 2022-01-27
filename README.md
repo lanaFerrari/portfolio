@@ -1,20 +1,18 @@
-### Portfolio Website
+# Portfolio
+
 Portfolio project to showcase a bit more about my professional profile and skills.
 
-Wireframes
----
-https://whimsical.com/portfolio-DFMtxxgmbdKtwMw51nZ8Kk
+## Tech
+- HTML and SCSS/CSS
+- Javascript
+- React
+- Node.js
+- Npm
 
+## Deployed version
 
-Deployed website
----
-******* Coming soon
+## Preview
 
-
-Credits
----
-Font visible on the site is the Open Source, Google Font: Inconsolata.
-Available from Google Fonts or Github
-
-All Icons on the site originate from font Awesome
+## Credits
+Icons from <a href="https://icons8.com/icon/101795/github">GitHub icon by Icons8</a>
 
