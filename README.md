@@ -12,7 +12,7 @@ Portfolio project to showcase a bit more about my professional profile and skill
 ## Wireframes
 https://whimsical.com/portfolio-DFMtxxgmbdKtwMw51nZ8Kk
 
-## Deployed version
+## Deployed app
 https://lanaferrari-portfolio.herokuapp.com/
 
 ## Preview
