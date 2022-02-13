@@ -18,7 +18,7 @@ var db = [{
   classTwo: "left",
   photo: "calculator.jpg",
   title: "Calculator",
-  description: "Website to practice authentication using Bcrypt and Token where the user can also play checkers.",
+  description: "Calculator built completely in Javascript. The end goal here is to have a site which can accept inputs, do some calculations and give you the outputs. The inputs will be generated from users clicking on the calculator buttons.",
   tech: ["Javascript", "HTML", "SCSS"],
   code: "https://github.com/lanaFerrari/calculator",
   deploy: "https://lanaferrari.github.io/calculator/"
