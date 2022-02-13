@@ -1,50 +1,6 @@
-export default function Works() {
-  const db = [
-    {
-      classOne: "left",
-      classTwo: "right",
-      photo: "checkers.jpg",
-      title: "Checkers Game",
-      description:
-        "Website to practice authentication using Bcrypt and Token where the user can also play checkers.",
-      tech: ["React", "Node.js", "Javascript", "PostgreSQL"],
-      code: "https://github.com/lanaFerrari/boolean-uk-final-solo-project-server",
-      deploy: "https://boolean-checkers-web.herokuapp.com/",
-    },
-    {
-      classOne: "right",
-      classTwo: "left",
-      photo: "donation.jpg",
-      title: "Donation Website",
-      description:
-        "Website where the user can perfom full CRUD and navigate through the pages.",
-      tech: ["React", "Node.js", "Javascript", "PostgreSQL"],
-      code: "https://github.com/lanaFerrari/boolean-uk-final-group-project-client",
-      deploy: "https://laravi.herokuapp.com/",
-    },
-    {
-      classOne: "left",
-      classTwo: "right",
-      photo: "spotify.png",
-      title: "Spotify HomePage",
-      description: "Website to practice accessibility and responsiveness.",
-      tech: ["HTML", "CSS"],
-      code: "https://github.com/lanaFerrari/boolean-uk-html-spotify",
-      deploy: "https://google.com",
-    },
-    {
-      classOne: "right",
-      classTwo: "left",
-      photo: "artexibit.png",
-      title: "Artist Exhibition",
-      description:
-        "Practice writing models with relationships for an API of an artist exhibition management service.",
-      tech: ["HTML", "CSS"],
-      code: "https://github.com/lanaFerrari/boolean-uk-api-artist-exhibition",
-      deploy: "https://google.com",
-    },
-  ];
+import db from "../db/db";
 
+export default function Works() {
   return (
     <section
       id="works"
