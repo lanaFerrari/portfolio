@@ -28,7 +28,7 @@ export default function Profile() {
         });
       }
     }
-    // start the text animation
+
     StartTextAnimation(0);
   });
 
@@ -40,7 +40,7 @@ export default function Profile() {
     >
       <h2 className="padding-top-bottom">About ------- ⫸</h2>
 
-      <div className="justify-center ">
+      <div className="justify-center">
         <div className="border grid-template padding-top-bottom padding-right-left">
           <div className="invite-frame box-shadow">
             <div className="frame-video">
@@ -63,14 +63,19 @@ export default function Profile() {
       </div>
       <div className="justify-content">
         <div className="flex padding-top-bottom">
-          <img
-            src="https://img.icons8.com/nolan/50/github.png"
-            className="icon-frame-three"
-          />
-          <img
-            src="https://img.icons8.com/nolan/50/linkedin-circled.png"
-            className="icon-frame-three"
-          />
+          <a href="https://github.com/lanaFerrari" target="_blank">
+            <img
+              src="https://img.icons8.com/nolan/50/github.png"
+              className="icon-frame-three"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/in/lanaferrari/" target="_blank">
+            <img
+              src="https://img.icons8.com/nolan/50/linkedin-circled.png"
+              className="icon-frame-three"
+            />
+          </a>
           <img
             src="https://img.icons8.com/nolan/50/email-sign.png"
             className="icon-frame-three"

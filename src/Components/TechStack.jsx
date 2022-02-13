@@ -1,24 +1,4 @@
-import { useInView } from "react-intersection-observer";
-
 export default function TechStack() {
-  // const ref = document.querySelector(".animated");
-
-  // selected.classList.remove(".animation");
-
-  // // Create the observer
-  // const observer = new IntersectionObserver((entries) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       selected.classList.add(".animation");
-  //       return;
-  //     }
-
-  //     selected.classList.remove(".animation");
-  //   });
-  // });
-
-  // observer.observe(document.querySelector(".wrapper"));
-
   return (
     <section
       id="techstack"
