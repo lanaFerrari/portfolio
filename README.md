@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio project to showcase a bit more about my professional profile and skills.
+Portfolio project to showcase a bit more about my profile and professional skills.
 
 ## Tech
 - HTML and SCSS/CSS
