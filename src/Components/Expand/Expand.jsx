@@ -1,6 +1,8 @@
+import "./Expand.scss";
+
 export default function Expand(props) {
   return (
-    <section className="s-font padding-right-left flex-end ">
+    <section className="expand s-font flex-end">
       <a href="#about">
         <div className="padding-menu">About()</div>
       </a>

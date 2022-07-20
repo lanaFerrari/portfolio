@@ -1,4 +1,9 @@
-export default function Home() {
+import Expand from "../Expand/Expand";
+import "./Home.scss";
+
+export default function Home(props) {
+  const { isCollapsed } = props;
+
   document.addEventListener("DOMContentLoaded", function (event) {
     // array with texts to type in typewriter
     var dataText = [
@@ -53,6 +58,7 @@ export default function Home() {
   return (
     <>
       <div className="home align-center">
+        {!isCollapsed && <Expand />}
         <section className="padding-left padding-top-bottom align-center">
           <h1 className="pink">Hello!</h1>
           <h1 className="pink">I'm Lana</h1>

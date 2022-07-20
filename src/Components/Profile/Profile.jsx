@@ -44,12 +44,18 @@ export default function Profile() {
         <div className="border grid-template padding-top-bottom padding-right-left">
           <div className="invite-frame box-shadow">
             <div className="frame-video">
-              <img src={require("../imgs/thankyou.gif")} alt="Thank you gif" />
+              <img
+                src={require("../../imgs/thankyou.gif")}
+                alt="Thank you gif"
+              />
             </div>
           </div>
 
           <div className="profile-frame box-shadow">
-            <img src={require("../imgs/profile.png")} alt="Blong girl icon" />
+            <img
+              src={require("../../imgs/profile.png")}
+              alt="Blong girl icon"
+            />
           </div>
 
           <div className="about-frame box-shadow padding-top">

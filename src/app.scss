@@ -1,7 +1,5 @@
 @import "./scss/variables.scss";
 
-$blue: #8fc5f8;
-
 /* Modern Reset */
 
 /* Box sizing rules */
@@ -79,6 +77,8 @@ a:active {
 
 .home {
   height: 95vh;
+  position: relative;
+  width: 100%;
 }
 
 header {
@@ -117,7 +117,7 @@ h3 {
 }
 
 .s-font {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 //Styling
@@ -141,11 +141,6 @@ h3 {
   -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
 }
-
-// .border {
-//   border-right: 3px double $green;
-//   border-left: 3px double $green;
-// }
 
 //Frames
 .icon-frame {
@@ -222,7 +217,7 @@ h3 {
 
 .home,
 header,
-.flex-end {
+.expand {
   background: linear-gradient(
     90deg,
     rgba(243, 231, 201) 0%,
@@ -336,10 +331,10 @@ span {
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
 
-  .flex-end {
-    display: grid;
-    justify-content: flex-end;
-  }
+  // .flex-end {
+  //   display: grid;
+  //   justify-content: flex-end;
+  // }
 
   .left,
   .right {
@@ -468,6 +463,13 @@ main {
 /* panel styles */
 .panel {
   min-height: 100vh;
+}
+
+.expand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 
 //Animations

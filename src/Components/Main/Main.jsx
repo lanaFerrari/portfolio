@@ -1,8 +1,7 @@
-import About from "./About";
-import Home from "./Home";
-import Works from "./Works";
+import About from "../About/About";
+import Home from "../Home/Home";
+import Works from "../Work/Works";
 import $ from "jquery";
-import Expand from "./Expand";
 
 export default function Main(props) {
   const { isCollapsed } = props;
@@ -45,8 +44,7 @@ export default function Main(props) {
     .scroll();
   return (
     <main>
-      {!isCollapsed && <Expand />}
-      <Home />
+      <Home isCollapsed={isCollapsed} />
       <Works />
       <About />
     </main>

@@ -74,6 +74,8 @@ a:active {
 
 .home {
   height: 95vh;
+  position: relative;
+  width: 100%;
 }
 
 header {
@@ -110,7 +112,7 @@ h3 {
 }
 
 .s-font {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 .justify-center {
@@ -210,7 +212,7 @@ h3 {
 
 .home,
 header,
-.flex-end {
+.expand {
   background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
 }
 
@@ -310,11 +312,6 @@ span {
     box-shadow: 1px -17px 1px rgba(239, 145, 175, 0.5);
     -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-  }
-
-  .flex-end {
-    display: grid;
-    justify-content: flex-end;
   }
 
   .left,
@@ -441,6 +438,13 @@ main {
 /* panel styles */
 .panel {
   min-height: 100vh;
+}
+
+.expand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 
 h2 {

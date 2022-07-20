@@ -1,4 +1,5 @@
-import db from "../db/db";
+import db from "../../db/db";
+import "./Work.scss";
 
 export default function Works() {
   return (
@@ -15,7 +16,7 @@ export default function Works() {
               <div className={project.classOne}>
                 <div className="frame-works box-shadow">
                   <img
-                    src={require("../imgs/" + project.photo)}
+                    src={require("../../imgs/" + project.photo)}
                     alt={project.title}
                   />
                 </div>
@@ -32,7 +33,7 @@ export default function Works() {
                 <div className="flex align padding-top padding-top-bottom">
                   <a href={project.code} target="_blank">
                     <img
-                      src={require("../imgs/icons/deploy.png")}
+                      src={require("../../imgs/icons/deploy.png")}
                       alt="Link to Deployed Website"
                       className="icon-frame-two"
                     />
@@ -40,7 +41,7 @@ export default function Works() {
 
                   <a href={project.deploy} target="_blank">
                     <img
-                      src={require("../imgs/icons/code.png")}
+                      src={require("../../imgs/icons/code.png")}
                       alt="Link to source code"
                       className="icon-frame-two"
                     />

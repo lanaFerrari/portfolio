@@ -1,3 +1,5 @@
+import "./TechStack.scss";
+
 export default function TechStack() {
   return (
     <section

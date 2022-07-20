@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import "./Header.scss";
 
 export default function Header(props) {
   const { isCollapsed, setIsCollapsed } = props;
@@ -21,7 +20,7 @@ export default function Header(props) {
         <div className="small-screen">
           <div className="icon-frame">
             <img
-              src={require("../imgs/icons/menu.png")}
+              src={require("../../imgs/icons/menu.png")}
               onClick={() => setIsCollapsed(!isCollapsed)}
             />
           </div>
