@@ -2,17 +2,15 @@ import "./Expand.scss";
 
 export default function Expand(props) {
   return (
-    <section className="expand s-font flex-end">
-      <a href="#about">
-        <div className="padding-menu">About()</div>
+    <section className="expand s-font">
+      <a className="no-display-bs" href="#about">
+        About()
       </a>
-
-      <a href="#works">
-        <div className="padding-menu">Works()</div>
+      <a className="no-display-bs" href="#works">
+        Works()
       </a>
-
-      <a href="#contact">
-        <div className="padding-menu">Contact()</div>
+      <a className="no-display-bs" href="#contact">
+        Contact()
       </a>
     </section>
   );

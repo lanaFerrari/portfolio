@@ -211,8 +211,7 @@ h3 {
 }
 
 .home,
-header,
-.expand {
+header {
   background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
 }
 
@@ -289,12 +288,8 @@ span {
 }
 @media screen and (max-width: 768px) {
   .expanded-screen,
-.description {
+.no-display-ss {
     display: none;
-  }
-
-  .padding-menu {
-    padding-left: 1.5rem;
   }
 
   .frame-video {
@@ -358,7 +353,8 @@ span {
   }
 }
 @media screen and (min-width: 768px) {
-  .small-screen {
+  .small-screen,
+.no-display-bs {
     display: none;
   }
 

@@ -216,8 +216,7 @@ h3 {
 }
 
 .home,
-header,
-.expand {
+header {
   background: linear-gradient(
     90deg,
     rgba(243, 231, 201) 0%,
@@ -307,12 +306,8 @@ span {
 //For small screens
 @media screen and (max-width: 768px) {
   .expanded-screen,
-  .description {
+  .no-display-ss {
     display: none;
-  }
-
-  .padding-menu {
-    padding-left: 1.5rem;
   }
 
   .frame-video {
@@ -330,11 +325,6 @@ span {
     -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
-
-  // .flex-end {
-  //   display: grid;
-  //   justify-content: flex-end;
-  // }
 
   .left,
   .right {
@@ -381,7 +371,8 @@ span {
 
 //For big screens
 @media screen and (min-width: 768px) {
-  .small-screen {
+  .small-screen,
+  .no-display-bs {
     display: none;
   }
 
