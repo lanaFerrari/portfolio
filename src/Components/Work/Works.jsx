@@ -23,10 +23,14 @@ export default function Works() {
               </div>
               <div className="justify-content">
                 <h3 className="align-center padding-top">{project.title}</h3>
-                <p className="description s-font">{project.description}</p>
+                <p className="big-screen s-font">{project.description}</p>
                 <div className="flex-c padding-top">
                   {project.tech.map((tec, index) => {
-                    return <p className="s-font">{tec}</p>;
+                    return (
+                      <p className="s-font" key={index}>
+                        {tec}
+                      </p>
+                    );
                   })}
                 </div>
 

@@ -1,0 +1,6 @@
+.expand {
+  display: grid;
+  justify-content: flex-end;
+  padding-right: 1.4rem;
+  background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
+}
