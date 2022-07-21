@@ -226,13 +226,13 @@ header {
 
 // Grids Flex
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 2.5rem;
-  padding-right: 1rem;
-}
+// .flex-container {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   gap: 2.5rem;
+//   padding-right: 1rem;
+// }
 
 .flex-c {
   display: flex;
@@ -449,18 +449,6 @@ main {
   color: #000;
   background-color: white;
   transition: background-color 3s ease;
-}
-
-/* panel styles */
-.panel {
-  min-height: 100vh;
-}
-
-.expand {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
 }
 
 //Animations

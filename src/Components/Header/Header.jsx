@@ -4,28 +4,27 @@ export default function Header(props) {
   const { isCollapsed, setIsCollapsed } = props;
 
   return (
-    <header className="lateral-padding bg-beige">
-      <nav className="flex-container">
-        <div className="expanded-screen flex-container s-font lateral-padding padding-top-bottom">
-          <a href="#about">
-            <div>About()</div>
-          </a>
-          <a href="#works">
-            <div>Works()</div>
-          </a>
-          <a href="#contact">
-            <div>Contact()</div>
-          </a>
-        </div>
-        <div className="small-screen">
-          <div className="icon-frame">
-            <img
-              src={require("../../imgs/icons/menu.png")}
-              onClick={() => setIsCollapsed(!isCollapsed)}
-            />
-          </div>
-        </div>
+    <header>
+      <nav className=" s-font">
+        <ul className="no-display-ss">
+          <li>
+            <a href="#about">About()</a>
+          </li>
+          <li>
+            <a href="#works">Works()</a>
+          </li>
+          <li>
+            <a href="#contact">Contact()</a>
+          </li>
+        </ul>
       </nav>
+      <div className="no-display-bs">
+        <img
+          className="icon-frame"
+          src={require("../../imgs/icons/menu.png")}
+          onClick={() => setIsCollapsed(!isCollapsed)}
+        />
+      </div>
     </header>
   );
 }
