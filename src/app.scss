@@ -78,8 +78,8 @@ a:active {
 //Fonts and sizes
 
 h1 {
-  line-height: 3rem;
-  font-size: 3rem;
+  line-height: 3.2rem;
+  font-size: 3.5rem;
   text-shadow: 2px 1.5px $green;
 }
 
@@ -89,13 +89,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
 .b-font {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
   text-shadow: 0.4px 0.4px $pink;
 }
 
@@ -114,6 +114,7 @@ h3 {
   display: grid;
   justify-items: center;
 }
+
 .align-center {
   display: grid;
   align-items: center;
@@ -124,28 +125,28 @@ h3 {
   justify-content: center;
 }
 
-.box-shadow {
-  border: solid #bdbdbd 1px;
-  box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-  -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-  -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-}
+// .box-shadow {
+//   border: solid #bdbdbd 1px;
+//   box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+//   -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+//   -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+// }
 
 //Frames
 .icon-frame {
   max-width: 35px;
 }
 
-.icon-frame-two {
-  width: 35px;
-  padding-top: 0.2rem;
-  padding-bottom: 0.5rem;
-}
+// .icon-frame-two {
+//   width: 35px;
+//   padding-top: 0.2rem;
+//   padding-bottom: 0.5rem;
+// }
 
-.icon-frame-two:hover {
-  width: 43px;
-  padding-bottom: 0;
-}
+// .icon-frame-two:hover {
+//   width: 43px;
+//   padding-bottom: 0;
+// }
 
 .icon-frame-three:hover {
   background-color: rgb(0, 0, 0);
@@ -153,11 +154,11 @@ h3 {
   border-radius: 50%;
   padding-bottom: 0;
 }
-.frame-works {
-  max-width: 400px;
-  overflow: hidden;
-  border-radius: 10px;
-}
+// .frame-works {
+//   max-width: 400px;
+//   overflow: hidden;
+//   border-radius: 10px;
+// }
 
 .frame-gif {
   max-width: 400px;
@@ -306,11 +307,6 @@ span {
     -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
 
-  .left,
-  .right {
-    display: grid;
-    justify-content: center;
-  }
   .responsive-grid-icons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -322,11 +318,6 @@ span {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 50%;
-  }
-
-  .align {
-    display: flex;
-    justify-content: center;
   }
 
   .profile-frame {
@@ -362,11 +353,11 @@ span {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .b-font {
@@ -387,6 +378,7 @@ span {
     padding-left: 2.5rem;
     padding-right: 3rem;
   }
+
   .two-c-grid {
     display: grid;
     grid-template: "a b";
@@ -401,11 +393,6 @@ span {
   .flex-end {
     display: grid;
     justify-content: flex-end;
-  }
-
-  .line-bottom {
-    padding: 5rem 1rem 4rem 1rem;
-    border-bottom: 3px double $green;
   }
 
   .responsive-grid-icons {
