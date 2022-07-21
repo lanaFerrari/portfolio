@@ -8,7 +8,7 @@ export default function TechStack() {
       data-color="baby-green"
     >
       <h2 className="padding-top-bottom">Tech Stack ------- ❤</h2>
-      <div class="justify-center  padding-top-bottom">
+      <div className="justify-center  padding-top-bottom">
         <div className="animated responsive-grid-icons box-size justify-center padding-top-bottom">
           <img src="https://img.icons8.com/ios/50/000000/github--v2.png" />
           <img src="https://img.icons8.com/color/50/000000/npm.png" />

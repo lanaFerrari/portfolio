@@ -18,33 +18,34 @@ export default function Works() {
                 </div>
               </div>
               <div className="works__item__content">
-                <h3>{project.title}</h3>
-                <p className="no-display-ss">{project.description}</p>
+                <div className="content-space">
+                  <h3>{project.title}</h3>
+                  <p className="no-display-ss">{project.description}</p>
 
-                <div className="works__item__content__tec">
-                  {project.tech.map((tec, index) => {
-                    return (
-                      <p className="s-font" key={index}>
-                        {tec}
-                      </p>
-                    );
-                  })}
-                </div>
+                  <div className="works__item__content__tec">
+                    {project.tech.map((tec, index) => {
+                      return (
+                        <p className="s-font" key={index}>
+                          {tec}
+                        </p>
+                      );
+                    })}
+                  </div>
+                  <div className="works__item__content__tec__links">
+                    <a href={project.code} target="_blank" rel="noreferrer">
+                      <img
+                        src={require("../../imgs/icons/deploy.png")}
+                        alt="Link to Deployed Website"
+                      />
+                    </a>
 
-                <div className="works__item__content__tec__links">
-                  <a href={project.code} target="_blank" rel="noreferrer">
-                    <img
-                      src={require("../../imgs/icons/deploy.png")}
-                      alt="Link to Deployed Website"
-                    />
-                  </a>
-
-                  <a href={project.deploy} target="_blank" rel="noreferrer">
-                    <img
-                      src={require("../../imgs/icons/code.png")}
-                      alt="Link to source code"
-                    />
-                  </a>
+                    <a href={project.deploy} target="_blank" rel="noreferrer">
+                      <img
+                        src={require("../../imgs/icons/code.png")}
+                        alt="Link to source code"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -73,7 +73,7 @@ a:active {
 }
 
 h1 {
-  line-height: 3.2rem;
+  line-height: 3.5rem;
   font-size: 3.5rem;
   text-shadow: 2px 1.5px #2c646b;
 }
@@ -89,8 +89,8 @@ h3 {
 }
 
 .b-font {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   text-shadow: 0.4px 0.4px #ee91af;
 }
 
@@ -252,13 +252,6 @@ span {
     max-width: 350px;
     overflow: hidden;
     border-radius: 10px;
-  }
-
-  .box-shadow {
-    border: solid #bdbdbd 1px;
-    box-shadow: 1px -17px 1px rgba(239, 145, 175, 0.5);
-    -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
-    -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
   }
 
   .responsive-grid-icons {

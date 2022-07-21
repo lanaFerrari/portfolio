@@ -30,7 +30,7 @@
 
     &__content {
       display: grid;
-      gap: 0.5rem;
+      align-items: center;
 
       &__tec {
         display: flex;
@@ -63,11 +63,10 @@
   .works {
     &__item {
       padding: 3rem 3rem 1.5rem 3rem;
+    }
 
-      &__content {
-        display: grid;
-        justify-items: center;
-      }
+    .content-space {
+      justify-items: center;
     }
   }
 
@@ -77,4 +76,9 @@
     justify-content: start;
     padding: 0.7rem 0 0.7rem 0;
   }
+}
+
+.content-space {
+  display: grid;
+  gap: 0.4rem;
 }
