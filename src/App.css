@@ -72,20 +72,9 @@ a:active {
   height: 65vh;
 }
 
-.home {
-  height: 95vh;
-  position: relative;
-  width: 100%;
-}
-
-header {
-  max-height: 250px;
-  padding: 1rem 0 1rem 0;
-}
-
 h1 {
-  line-height: 3.5rem;
-  font-size: 3.5rem;
+  line-height: 3rem;
+  font-size: 3rem;
   text-shadow: 2px 1.5px #2c646b;
 }
 
@@ -100,8 +89,8 @@ h3 {
 }
 
 .b-font {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   text-shadow: 0.4px 0.4px #ee91af;
 }
 
@@ -208,11 +197,6 @@ h3 {
 
 .padding-top-m {
   padding-top: 3.5rem;
-}
-
-.home,
-header {
-  background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
 }
 
 .flex-c {
@@ -351,8 +335,8 @@ span {
   }
 
   h1 {
-    font-size: 5.5rem;
-    line-height: 6rem;
+    font-size: 4.5rem;
+    line-height: 4.6rem;
   }
 
   h2 {
@@ -364,8 +348,8 @@ span {
   }
 
   .b-font {
-    font-size: 2.3em;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .padding-left {
