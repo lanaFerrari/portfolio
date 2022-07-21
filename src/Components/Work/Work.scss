@@ -1,3 +1,80 @@
+@import "./../../scss/variables.scss";
+
 .panel {
   min-height: 100vh;
+}
+
+.left,
+.right {
+  display: grid;
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+.works {
+  padding: 2rem;
+
+  &__item {
+    padding: 5rem 1rem 4rem 1rem;
+    border-bottom: 3px double $green;
+
+    &__img {
+      max-width: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+      border: solid #bdbdbd 1px;
+      box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+      -webkit-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+      -moz-box-shadow: 12px -17px 1px rgba(239, 145, 175, 0.5);
+    }
+
+    &__content {
+      display: grid;
+      gap: 0.5rem;
+
+      &__tec {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        &__links {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          img {
+            width: 35px;
+            padding-top: 0.2rem;
+            padding-bottom: 0.5rem;
+          }
+
+          img:hover {
+            width: 43px;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .works {
+    &__item {
+      padding: 3rem 3rem 1.5rem 3rem;
+
+      &__content {
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+
+  .left,
+  .right {
+    display: grid;
+    justify-content: start;
+    padding: 0.7rem 0 0.7rem 0;
+  }
 }

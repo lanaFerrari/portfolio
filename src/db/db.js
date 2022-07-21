@@ -5,7 +5,7 @@ const db = [
     photo: "boggle.jpg",
     title: "Checkers Game",
     description:
-      "Full functional browser based game using HTML, CSS/SCSS and JavaScript. This project was created having in mind the four fundamental concepts of Object-oriented programming. Goals: Have at least 25 Git commits for the project and repo on GitHub. JS code must be formatted as functions or Classes. Use click or keypress events in JavaScript to trigger the events in the game. Take a Mobile first approach to the implementation.",
+      "Full functional browser based game using HTML, CSS/SCSS and JavaScript. This project was created having in mind the four fundamental concepts of OOP, was formated as functions/classes and has a Mobile first approach to the implementation.",
     tech: ["Javascript", "HTML", "SCSS"],
     code: "https://github.com/lanaFerrari/boggle-game",
     deploy: "https://lanaferrari.github.io/boggle-game/",
@@ -16,7 +16,7 @@ const db = [
     photo: "calculator.jpg",
     title: "Calculator",
     description:
-      "Calculator built completely in Javascript. The end goal here is to have a site which can accept inputs, do some calculations and give you the outputs. The inputs will be generated from users clicking on the calculator buttons.",
+      "Calculator built completely in Javascript. The end goal is to have a site which can accept inputs, do some calculations and give you the outputs. The inputs will be generated from users clicking on the calculator buttons.",
     tech: ["Javascript", "HTML", "SCSS"],
     code: "https://github.com/lanaFerrari/calculator",
     deploy: "https://lanaferrari.github.io/calculator/",
@@ -27,7 +27,7 @@ const db = [
     photo: "checkers.jpg",
     title: "Checkers Game",
     description:
-      "Website to practice authentication using Bcrypt and Token where the user can also play checkers.",
+      "Website to practice authentication using Bcrypt and Token where the user can also play Checkers Game.",
     tech: ["React", "Node.js", "Javascript", "PostgreSQL"],
     code: "https://github.com/lanaFerrari/boolean-uk-final-solo-project-server",
     deploy: "https://boolean-checkers-web.herokuapp.com/",
@@ -38,7 +38,7 @@ const db = [
     photo: "donation.jpg",
     title: "Donation Website",
     description:
-      "Website where the user can perfom full CRUD and navigate through the pages.",
+      "Full CRUD Exercise, this project was created in group with 2 other developers: Viktorija and Rafael. The user can include, exclude and edit projects and see them on the main page.",
     tech: ["React", "Node.js", "Javascript", "PostgreSQL"],
     code: "https://github.com/lanaFerrari/boolean-uk-final-group-project-client",
     deploy: "https://laravi.herokuapp.com/",
@@ -48,22 +48,23 @@ const db = [
     classTwo: "right",
     photo: "spotify.png",
     title: "Spotify HomePage",
-    description: "Website to practice accessibility and responsiveness.",
+    description:
+      "One of the first website I created only using HTML and CSS. The main goal was to practice accessibility and responsiveness.",
     tech: ["HTML", "CSS"],
     code: "https://github.com/lanaFerrari/boolean-uk-html-spotify",
-    deploy: "https://google.com",
+    deploy: "https://lanaferrari.github.io/boolean-uk-html-spotify/",
   },
-  {
-    classOne: "right",
-    classTwo: "left",
-    photo: "artexibit.png",
-    title: "Artist Exhibition",
-    description:
-      "Practice writing models with relationships for an API of an artist exhibition management service.",
-    tech: ["HTML", "CSS"],
-    code: "https://github.com/lanaFerrari/boolean-uk-api-artist-exhibition",
-    deploy: "https://google.com",
-  },
+  // {
+  //   classOne: "right",
+  //   classTwo: "left",
+  //   photo: "artexibit.png",
+  //   title: "Artist Exhibition",
+  //   description:
+  //     "Practice writing models with relationships for an API of an artist exhibition management service.",
+  //   tech: ["HTML", "CSS"],
+  //   code: "https://github.com/lanaFerrari/boolean-uk-api-artist-exhibition",
+  //   deploy: "https://google.com",
+  // },
 ];
 
 export default db;

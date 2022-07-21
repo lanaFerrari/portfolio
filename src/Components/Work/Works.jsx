@@ -3,28 +3,25 @@ import "./Work.scss";
 
 export default function Works() {
   return (
-    <section
-      id="works"
-      className="lateral-padding padding-right-left padding-top-bottom panel"
-      data-color="white"
-    >
-      <h2 className="padding-top-bottom">Projects</h2>
+    <section className="works panel" data-color="white">
+      <h2>Projects</h2>
       <div>
         {db.map((project, index) => {
           return (
-            <div key={index} className="two-c-grid line-bottom animation">
+            <div key={index} className="works__item two-c-grid">
               <div className={project.classOne}>
-                <div className="frame-works box-shadow">
+                <div className="works__item__img">
                   <img
                     src={require("../../imgs/" + project.photo)}
                     alt={project.title}
                   />
                 </div>
               </div>
-              <div className="justify-content">
-                <h3 className="align-center padding-top">{project.title}</h3>
-                <p className="big-screen s-font">{project.description}</p>
-                <div className="flex-c padding-top">
+              <div className="works__item__content">
+                <h3>{project.title}</h3>
+                <p className="no-display-ss">{project.description}</p>
+
+                <div className="works__item__content__tec">
                   {project.tech.map((tec, index) => {
                     return (
                       <p className="s-font" key={index}>
@@ -34,20 +31,18 @@ export default function Works() {
                   })}
                 </div>
 
-                <div className="flex align padding-top padding-top-bottom">
-                  <a href={project.code} target="_blank">
+                <div className="works__item__content__tec__links">
+                  <a href={project.code} target="_blank" rel="noreferrer">
                     <img
                       src={require("../../imgs/icons/deploy.png")}
                       alt="Link to Deployed Website"
-                      className="icon-frame-two"
                     />
                   </a>
 
-                  <a href={project.deploy} target="_blank">
+                  <a href={project.deploy} target="_blank" rel="noreferrer">
                     <img
                       src={require("../../imgs/icons/code.png")}
                       alt="Link to source code"
-                      className="icon-frame-two"
                     />
                   </a>
                 </div>
