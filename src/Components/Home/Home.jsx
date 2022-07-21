@@ -57,14 +57,16 @@ export default function Home(props) {
 
   return (
     <>
-      <div className="home align-center">
+      <div className="home">
         {!isCollapsed && <Expand />}
-        <section className="padding-left padding-top-bottom align-center">
-          <h1 className="pink">Hello!</h1>
-          <h1 className="pink">I'm Lana</h1>
-          <div className="b-font padding-top">
-            <p>Jr. Software Developer</p>
-            <p>Based in London</p>
+        <section className="home__section">
+          <div className="home__section__text">
+            <h1 className="pink">Hello!</h1>
+            <h1 className="pink">I'm Lana</h1>
+            <div className="b-font">
+              <p>Jr. Software Developer</p>
+              <p>Based in London</p>
+            </div>
           </div>
         </section>
         <div className="justify-center">

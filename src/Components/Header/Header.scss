@@ -1,5 +1,12 @@
 header {
   display: grid;
   justify-items: flex-end;
-  padding-right: 1.4rem;
+  max-height: 250px;
+  padding: 1rem 1.4rem 1rem 0;
+
+  ul {
+    display: flex;
+    justify-items: flex-end;
+    gap: 1rem;
+  }
 }

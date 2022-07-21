@@ -1,0 +1,16 @@
+.home,
+header {
+  background: linear-gradient(90deg, #f3e7c9 0%, #101f1f 700%);
+}
+
+.home {
+  height: 95vh;
+  position: relative;
+  width: 100%;
+}
+.home__section {
+  height: 80vh;
+}
+.home__section__text {
+  padding: 5rem 2rem 5rem 2rem;
+}

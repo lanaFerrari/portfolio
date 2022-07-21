@@ -5,7 +5,7 @@ export default function Header(props) {
 
   return (
     <header>
-      <nav className=" s-font">
+      <nav className="s-font">
         <ul className="no-display-ss">
           <li>
             <a href="#about">About()</a>

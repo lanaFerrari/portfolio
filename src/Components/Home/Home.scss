@@ -1,0 +1,22 @@
+.home,
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(243, 231, 201) 0%,
+    rgba(16, 31, 31, 1) 700%
+  );
+}
+
+.home {
+  height: 95vh;
+  position: relative;
+  width: 100%;
+
+  &__section {
+    height: 80vh;
+
+    &__text {
+      padding: 5rem 2rem 5rem 2rem;
+    }
+  }
+}
