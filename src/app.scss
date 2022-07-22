@@ -382,7 +382,7 @@ span {
   .two-c-grid {
     display: grid;
     grid-template: "a b";
-    gap: 5rem;
+    grid-gap: 2rem;
   }
 
   .icon-frame,
@@ -407,6 +407,18 @@ span {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 50%;
+  }
+
+  .works {
+    &__item {
+      display: grid;
+      align-items: center;
+
+      &__img:hover {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 

@@ -8,8 +8,8 @@ export default function Works() {
       <div className="justify-center">
         {db.map((project, index) => {
           return (
-            <div key={index} className="works__item two-c-grid align-center">
-              <div className={project.classOne}>
+            <div key={index} className="works__item two-c-grid">
+              <div className={`works__item__img-section ${project.classOne}`}>
                 <div className="works__item__img">
                   <img
                     src={require("../../imgs/" + project.photo)}
@@ -26,7 +26,7 @@ export default function Works() {
                     {project.tech.map((tec, index) => {
                       return (
                         <p className="s-font" key={index}>
-                          {tec}
+                          • {tec}
                         </p>
                       );
                     })}
