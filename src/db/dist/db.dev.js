@@ -8,7 +8,7 @@ var db = [{
   classOne: "left",
   classTwo: "right",
   photo: "boggle.jpg",
-  title: "Checkers Game",
+  title: "Boggle Game",
   description: "Full functional browser based game using HTML, CSS/SCSS and JavaScript. This project was created having in mind the four fundamental concepts of OOP, was formated as functions/classes and has a Mobile first approach to the implementation.",
   tech: ["Javascript", "HTML", "SCSS"],
   code: "https://github.com/lanaFerrari/boggle-game",

@@ -9,3 +9,6 @@ header ul {
   justify-items: flex-end;
   gap: 1rem;
 }
+header ul li:hover {
+  font-weight: bolder;
+}

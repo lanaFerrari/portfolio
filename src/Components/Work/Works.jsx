@@ -3,12 +3,12 @@ import "./Work.scss";
 
 export default function Works() {
   return (
-    <section className="works panel" data-color="white">
+    <section id="works" className="works panel" data-color="white">
       <h2>Projects</h2>
-      <div>
+      <div className="justify-center">
         {db.map((project, index) => {
           return (
-            <div key={index} className="works__item two-c-grid">
+            <div key={index} className="works__item two-c-grid align-center">
               <div className={project.classOne}>
                 <div className="works__item__img">
                   <img

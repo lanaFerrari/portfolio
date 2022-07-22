@@ -16,7 +16,11 @@ header {
     height: 80vh;
 
     &__text {
-      padding: 15rem 2rem 0rem 2rem;
+      padding: 14rem 2rem 0rem 2rem;
     }
+  }
+
+  img:hover {
+    width: 3.3rem;
   }
 }

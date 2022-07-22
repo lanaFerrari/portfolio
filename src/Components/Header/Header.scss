@@ -8,5 +8,9 @@ header {
     display: flex;
     justify-items: flex-end;
     gap: 1rem;
+
+    li:hover {
+      font-weight: bolder;
+    }
   }
 }

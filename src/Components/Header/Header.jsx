@@ -14,7 +14,7 @@ export default function Header(props) {
             <a href="#works">Works()</a>
           </li>
           <li>
-            <a href="#contact">Contact()</a>
+            <a href="#about">Contact()</a>
           </li>
         </ul>
       </nav>

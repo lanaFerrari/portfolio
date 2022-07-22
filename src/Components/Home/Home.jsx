@@ -65,12 +65,17 @@ export default function Home(props) {
             <h1 className="pink">I'm Lana</h1>
             <div className="b-font">
               <p>Jr. Software Developer</p>
-              <p>Based in London</p>
+              {/* <p>Based in London</p> */}
             </div>
           </div>
         </section>
         <div className="justify-center">
-          <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/48/000000/external-scroll-touch-gestures-those-icons-lineal-those-icons-2.png" />
+          <a href="#works">
+            <img
+              src="https://img.icons8.com/external-those-icons-lineal-those-icons/48/000000/external-scroll-touch-gestures-those-icons-lineal-those-icons-2.png"
+              alt="scroll down icon"
+            />
+          </a>
         </div>
       </div>
     </>
