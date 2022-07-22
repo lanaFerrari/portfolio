@@ -36,7 +36,7 @@ var db = [{
   classTwo: "left",
   photo: "donation.jpg",
   title: "Donation Website",
-  description: "Full CRUD Exercise, this project was created in group with 2 other developers: Viktorija and Rafael. The user can include, exclude and edit projects and see them on the main page.",
+  description: "Full CRUD Exercise, this project was created in group with 2 other developers: Viktorija and Rafael. The user can include, exclude and edit projects as well as see them on the main page.",
   tech: ["React", "Node.js", "Javascript", "PostgreSQL"],
   code: "https://github.com/lanaFerrari/boolean-uk-final-group-project-client",
   deploy: "https://laravi.herokuapp.com/"
@@ -45,7 +45,7 @@ var db = [{
   classTwo: "right",
   photo: "spotify.png",
   title: "Spotify HomePage",
-  description: "One of the first website I created only using HTML and CSS. The main goal was to practice accessibility and responsiveness.",
+  description: "One of the first website I created using only  HTML and CSS. The main goal was to practice accessibility and responsiveness.",
   tech: ["HTML", "CSS"],
   code: "https://github.com/lanaFerrari/boolean-uk-html-spotify",
   deploy: "https://lanaferrari.github.io/boolean-uk-html-spotify/"
